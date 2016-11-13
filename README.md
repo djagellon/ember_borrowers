@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Borrowers
 
 This README outlines the details of collaborating on this Ember application.
@@ -54,4 +53,3 @@ Specify what it takes to deploy your app.
 
 =======
 # ember_borrowers
->>>>>>> 6b093021695beedf61450a66067d5028846f7092
