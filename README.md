@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Borrowers
 
 This README outlines the details of collaborating on this Ember application.
@@ -51,3 +52,6 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+=======
+# ember_borrowers
+>>>>>>> 6b093021695beedf61450a66067d5028846f7092
