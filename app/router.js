@@ -17,6 +17,13 @@ Router.map(function() {
       path: ':friend_id/edit'
     });
   });
+  this.route('articles', function() {
+    this.route('new');
+
+    this.route('show', {
+      path: ':article_id'
+    });
+  });
 });
 
 export default Router;
