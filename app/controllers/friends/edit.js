@@ -6,6 +6,7 @@ export default Ember.Controller.extend({
 			this.transitionToRoute('friends.show', model);
 		},
 		cancel(model) {
+			console.log("cancelling transaction")
 			this.transitionToRoute('friends.show', model);
 		}
 	}

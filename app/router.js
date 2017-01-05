@@ -23,6 +23,10 @@ Router.map(function() {
     this.route('show', {
       path: ':article_id'
     });
+
+    this.route('edit', {
+      path: ':article_id/edit'
+    });
   });
 });
 
