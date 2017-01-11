@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	/* Done without computed property macros
 	isValid: Ember.computed(
 		'model.email',
 		'model.firstName',
@@ -15,6 +16,20 @@ export default Ember.Component.extend({
 			}
 		}
 	),
+	*/
+
+	// With Macros
+	hasEmail: 		Ember.computed.notEmpty('model.email'), 
+	hasFirstName: 	Ember.computed.notEmpty('model.firstName'), 
+	hasLastName: 	Ember.computed.notEmpty('model.lastName'), 
+	hastwitter: 	Ember.computed.notEmpty('model.twitter'), 
+	isValid: 		Ember.computed.and(
+		'hasEmail',
+		'hasFirstName',
+		'hasLastName',
+		'hasTwitter'
+	),  
+	
 	actions: {
 		save() {
 			console.log('+- save action in edit-form component');
