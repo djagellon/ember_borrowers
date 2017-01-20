@@ -2,12 +2,10 @@
 <td>{{loan.notes}}</td>
 <td>{{loan.createdAt}}</td>
 <td>
-	{{input type="checkbox" checked=loan.returned}}
+	{{input type="checkbox" checked=loan.returned click=(action save loan)}}
 </td>
 <td>
 	{{#if loan.isSaving}}
 		<p>Saving ...</p>
-	{{else if loan.hasDirtyAttributes}}
-		<button {{action save loan}}>Save</button>
 	{{/if}}
 </td>
